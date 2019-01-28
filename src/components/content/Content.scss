@@ -1,0 +1,126 @@
+.intro {
+  color: #fff;
+  padding-top: 70px;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 10px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
+
+  p {
+    padding-right: 50px;
+    line-height: 30px;
+
+    @media screen and (max-width: 600px) {
+      padding-right: 0;
+    }
+  }
+}
+
+.section-intro {
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+.section {
+  border-bottom: 1px solid #e1e8f0;
+  padding: 67px 0 77px 0;
+  clear: both;
+
+  @media screen and (max-width: 600px) {
+    padding: 50px 0;
+  }
+
+  &:last-child {
+    border: none;
+  }
+
+  &-text {
+    font-size: 22px;
+    line-height: 46px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &--center {
+      text-align: center;
+      max-width: 70%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 1160px) {
+        max-width: none;
+      }
+    }
+  }
+  &-title {
+    color: #061d3b;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 66px;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 600px) {
+    margin-top: 45px;
+  }
+
+  &__item {
+    margin: 0 12px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 50px;
+      width: 45%;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 95%;
+    }
+
+    &-icon {
+      display: block;
+      width: 80px;
+      height: 60px;
+      margin: 0 auto 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &--1 {
+        background-image: url(./assets/ico-1.png);
+      }
+      &--2 {
+        background-image: url(./assets/ico-2.png);
+      }
+      &--3 {
+        background-image: url(./assets/ico-3.png);
+      }
+      &--4 {
+        background-image: url(./assets/ico-4.png);
+      }
+    }
+
+    &-text {
+      color: #061d3b;
+      font-size: 15px;
+      line-height: 30px;
+      text-align: center;
+    }
+  }
+}

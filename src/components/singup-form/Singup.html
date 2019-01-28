@@ -1,0 +1,22 @@
+<div class="form">
+  <form @submit.prevent="validateBeforeSubmit">
+    <div class="form__field">
+      <input type="text" placeholder="Full name" class="form-input" name="name" required v-model="name" v-validate="'required'">
+    </div>
+    <div class="form__field">
+      <input type="email" placeholder="Email" class="form-input" name="email" required v-model="email" v-validate="'required|email'">
+    </div>
+    <div class="form__field">
+      <input type="text" placeholder="Current position" class="form-input" name="position" required v-model="position" v-validate="'required'">
+    </div>
+    <div class="form__field">
+      <input type="text" placeholder="What is your current expertise in Data Science?" class="form-input" name="expertise" required v-model="expertise" v-validate="'required'">
+    </div>
+    <div class="form__field">
+      <textarea class="form-textarea" placeholder="Why are you interested in this program and what would you like to achieve?" name="reason" v-model="reason"></textarea>
+    </div>
+    <div class="form__submit">
+      <button class="form-button">Sign up for the program for free</button>
+    </div>
+  </form>
+</div>
